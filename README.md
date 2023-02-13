@@ -23,14 +23,14 @@ nuance as a result.
 ## Materials and Methods
 
 I will be utilizing COVID-19 genomes which will be provided to me by my lab. I intend to also obtain genomes from geographic locations outside of North America to try
-and create some inferences as to the region of origin of the genomes which were sequenced by my lab. I am unsure of what software I will use to create my alignments -
-I currently think that I will use BLAST, but this may change after I obtain all of my sequences and have a better idea of the tools I will need to analyze and align
-them. To generate the pairwise comparative matrices, I intend to use R, as it is the best tool for creating and analyzing spreadsheets of data and is the most easily
-scaled in comparison to something like Excel. I also want to learn how to use R as the majority of my statistics work has been in Excel and Python up to this point.
+and create some inferences as to the region of origin of the genomes which were sequenced by my lab. I will use CLUSTAL to generate my alignments as it is the same 
+software which the authors used and my lab has access to it. To generate the pairwise comparative matrices, I intend to use R, as it is the best tool for creating and 
+analyzing spreadsheets of data and is the most easily scaled in comparison to something like Excel. I also want to learn how to use R as the majority of my statistics 
+work has been in Excel and Python up to this point.
 
-The phylogenetic trees will likely be created using Geneious software, which is also utilized by the authors of the figure that I am trying to reproduce. My current 
-goal is to utilize all of their methods, including the generation of pairwise comparative matrices. To create the trees themselves, I intend to use the Neighbor 
-Joining Method (NJM) and  Kimura 80 to estimate evolutionary distance between the nodes. I would like to try and hand-calculate either UPGMA or NJM to gain a better 
+The phylogenetic trees will likely be created using Geneious or PhyML. My current goal is to utilize the same software which the authors used, including the  
+generation of pairwise comparative matrices. To create the trees themselves, I intend to use the Neighbor Joining Method (NJM) and  Kimura 80 to estimate evolutionary 
+distance between the nodes. I would like to try and hand-calculate either UPGMA or NJM to gain a better 
 understanding of how these simpler algorithms actually work.
 
 If I find that the alignments and creation of the trees take shorter than expected, I will consider incorporating more samples into my tree and using a more 
