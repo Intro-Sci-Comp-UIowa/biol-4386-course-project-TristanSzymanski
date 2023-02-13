@@ -1,11 +1,12 @@
-## COVID-19 Genomes and Phylogenetics
+# COVID-19 Genomes and Phylogenetics
 
-# Reference
+## Reference
 
 Kandeel, Mahmoud, Maged E. M. Mohamed, Hany M. Abd El-Lateef, Katharigatta N.
 Venugopala, Hossam S. El-Beltagi, “Omicron variant genome evolution and phylogenetics,”
 Medical Virology 2022; 94:1627-1632. 
-# Introduction
+
+## Introduction
 
 I will be reproducing the phylogenetic trees in Kandeel et. al. To achieve this, I will use data on COVID genomes collected by my lab and outside COVID genomes from
 GISAID. Kandeel et. al. set out to establish a lineage and relationship between the then-emerging Omicron strain and other known variants at the time. To achieve this,
@@ -15,11 +16,11 @@ estimate the evolutionary distance between nodes on the tree. The authors used b
 substitution method and the Kimura 80 substitution method to estimate distances. All of these rely on simple algorithms to be calculated but lose a great amount of
 nuance as a result.
 
-# Figure to Reproduce
+## Figure to Reproduce
 
 ![Figures to Reproduce](https://i.imgur.com/OVo6aSL.png)
 
-# Materials and Methods
+## Materials and Methods
 
 I will be utilizing COVID-19 genomes which will be provided to me by my lab. I intend to also obtain genomes from geographic locations outside of North America to try
 and create some inferences as to the region of origin of the genomes which were sequenced by my lab. I am unsure of what software I will use to create my alignments -
