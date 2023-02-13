@@ -22,11 +22,3 @@ or NJM to gain a better understanding of how these simpler algorithms actually w
 
 If I find that the alignments and creation of the trees take shorter than expected, I will consider incorporating more
 samples into my tree or using a more complicated model, such as a maximum likeliness method or a Bayesian method.
-
-
-# Results
-
-# Discussion
-
-# Conclusion
-
