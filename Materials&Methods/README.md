@@ -8,11 +8,12 @@ alternative genomes were restricted to samples collecte as close to the Japanese
 
 ## Software Methods
 
-To create my alignments, I will be using CLUSTAL. Phylogenetic analysis will be performed with Geneious or PhyML software.
+Alignments will be created using CLUSTAL, and pairwise comparative matrices generated using R. Phylogenetic analysis will be performed with Geneious software. 
+The trees calculated using Neighbor Joining Method & Kimura Method will be done in Geneious. Bayesian trees will be created using Geneious as well.
 
 ## Phylogenetics
 
 One issue with the Kandeel et al. article is that the authors utilized a very simplistic method on an incredibly small dataset. For this reason I will be using
 the authors' methods on a much larger dataset than the 7 sequences they analyzed to test their model on larger data. I will additionally use Bayesian maximum
-likelihood models to create a more accurate tree. Likelihood-based phylogenetic analysis tends to be more accurate and powerful than fixed-rate approximations
-for relatedness and evolutionary distance.
+likelihood models to create a more accurate tree. All created trees will be compared to the models in Kandeel et. al. Likelihood-based phylogenetic analysis tends to be 
+more accurate and powerful than fixed-rate approximations for relatedness and evolutionary distance, and this provides an opportunity to compare the the two.
