@@ -8,8 +8,8 @@ alternative genomes were restricted to samples collecte as close to the Japanese
 
 ## Software Methods
 
-Alignments will be created using CLUSTAL, and pairwise comparative matrices generated using R. Phylogenetic analysis will be performed with Geneious software. 
-The trees calculated using Neighbor Joining Method & Kimura Method will be done in Geneious. Bayesian trees will be created using Geneious as well.
+Alignments will be created using CLUSTAL, and pairwise comparative matrices generated using R. Phylogenetic analysis will be performed with RAXML phylogenetic software. 
+The trees calculated using Neighbor Joining Method & Kimura Method will be done in RAXML. Bayesian trees will be created using RAXML as well.
 
 ## Phylogenetics
 
