@@ -1,8 +1,12 @@
 # Materials and Methods
 
-Data was acquired from the GISAID EpiCov database of COVID-19 genomes. Genomes were selected from the lineages examined by Kandeel et al. In order to better utilize the
-fixed-rate dendrogram methods, I collected the closest 49 samples to the genomes listed by Kandeel et. al.  Due to the overrerpresentation of Japanese
-sequences in the original dataset, I opted to take samples of my variant lineages from alternative geographic locations for Beta, Delta, and Gamma variant
+Data was acquired from the GISAID EpiCov database of genomes collected from patients afflicted by COVID-19. Genomes were selected from the lineages examined by Kandeel 
+et al. The GISAID database is a global collaboration to collect, track, monitor, and share data on emerging epidemics. Due to this collaborative nature, GISAID prohibits 
+its members to share the data itself in any publicly accessible format in order to ensure that its collaborators are properly credited for their contributions to the
+database. This is explained in further in the Data/ readme.
+
+In order to better utilize the fixed-rate dendrogram methods, I collected the closest 49 samples to the genomes listed by Kandeel et. al.  Due to the overrerpresentation 
+of Japanese sequences in the original dataset, I opted to take samples of my variant lineages from alternative geographic locations for Beta, Delta, and Gamma variant
 lineages. In order to evaluate the effectiveness of Kandeel et al's original model, I am retaining their original Japanese samples as well. All of the 
 alternative genomes were restricted to samples collecte as close to the Japanese genome as possible.
 
