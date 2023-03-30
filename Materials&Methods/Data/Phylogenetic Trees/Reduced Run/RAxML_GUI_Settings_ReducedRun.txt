@@ -1,0 +1,6 @@
+The analysis was run using raxmlGUI 2.0 (version 2.0.10) as follows:
+Analysis: ML + rapid bootstrap
+Binary: raxmlHPC-PTHREADS-SSE3.exe version 8.2.12
+Results saved to: C:\Users\tszymanski\Desktop\RaxML\standard-RAxML
+RAxML was called with these arguments:
+1.) -T 24 -f a -x 861347 -p 861347 -N 100 -m GTRGAMMA -O -n ReducedRun.tre -s "C:\Users\tszymanski\Desktop\RaxML\standard-RAxML\nextalign.aligned.fasta.reduced" -w "C:\Users\tszymanski\Desktop\RaxML\standard-RAxML"
