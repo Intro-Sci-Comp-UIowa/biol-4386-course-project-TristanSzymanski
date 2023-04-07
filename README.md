@@ -1,4 +1,4 @@
-# COVID-19 Genomes and Phylogenetics
+# SARS-CoV-2 Genomes and Phylogenetics
 
 ## Reference
 
@@ -8,14 +8,11 @@ Medical Virology 2022; 94:1627-1632.
 
 ## Introduction
 
-I will be reproducing the phylogenetic trees in Kandeel et. al. To achieve this, I will use data on COVID genomes collected by my lab and outside COVID genomes from
-the GISAID database. GISAID is a database of genome sequences compiled by labs all over the world to help research and combat emerging epidemics.  Kandeel et. al. set 
-out to establish a lineage and relationship between the then-emerging Omicron strain and other known variants at the time. To achieve this, they used relatively simple 
-methods to put forward a preliminary model that related Omicron to other strains sourced from a variety of geographic locations. The authors obtained all of their data 
-through GISAID. The phylogenetic trees were created using simple methods to connect operational taxonomic units (OTUs) and to estimate the evolutionary distance 
-between nodes on the tree. The authors used both the UPGMA and Neighbor-Joining methods to make the trees. To estimate distance, they used the Jukes-Cantor 
-substitution method and the Kimura 80 substitution method to estimate distances, which use the fixed rate of transitions and transversions occurring in DNA to evaluate 
-how much time has passed between two sequences. All of these rely on simple algorithms to be calculated and lose a great amount of nuance as a result.
+I will be reproducing the phylogenetic trees in Kandeel *et. al.* 2022. To achieve this, I will SARS-CoV-2 genomes obtained from the
+GISAID EPI-COV database. GISAID is a database of genome sequences compiled by labs all over the world to help research and 
+combat emerging epidemics.  Kandeel et. al. set out to establish a lineage and relationship between the then-emerging Omicron strain and other known variants at the time. To achieve this, they used the UPGMA and Neighbor Joining methods to put forward a preliminary model that related Omicron to other strains sourced from a variety of geographic locations. The authors obtained all of their data through GISAID.
+
+My goal was to re-assess their data utilizing Maximum Likelihood methods instead, and compare my results to theirs. To achieve this, I acquired a more geographically diverse array of sequences and increased the sample size from 8 to 401. The 8 samples used in Kandeel *et al* 2022 were included in my dataset.
 
 ## Figure to Reproduce
 
@@ -23,13 +20,12 @@ how much time has passed between two sequences. All of these rely on simple algo
 
 ## Materials and Methods
 
-I obtained all of my genomes from the aforementioned GISAID database. I will use CLUSTAL to generate my alignments as it is the same  software which the authors used 
-and my lab has access to it. To generate the pairwise comparative matrices which are required for the relatedness models I am using, I intend to use R.
+### Data
+I obtained all of my genomes from the aforementioned GISAID database. Due to the GISAID database's data sharing regulations, I cannot make the raw sequence data publicly available. RAxML identified 103 identical sequences in the alignment and these were removed for the final tree construction. The full list of EPI_ISL identifiers to download the .fasta sequences I utilized is provided in the ./Materials and Methods/ folder, along with the reduced list.
 
-The phylogenetic trees will likely be created using Geneious or PhyML. My current goal is to utilize the same software which the authors used, including the  
-generation of pairwise comparative matrices. To create the trees themselves, I intend to use the Neighbor Joining Method (NJM) and  Kimura 80 to estimate evolutionary 
-distance between the nodes. I would like to try and hand-calculate either UPGMA or NJM to gain a better understanding of how these simpler algorithms actually work.
+### Methods
+I used Nextalign to generate my alignments as 401 genomes proved to be too computationally intensive for CLUSTAL to align. For the reference genome, I used the Wuhan Hu-1 sequence. This alignment was then used in RAxML to generate a tree using Bayesian Maximum Likelihood methods. The sequences were bootstrapped 100 times using the RAxML rapid bootstrap method. The output .tre file was acquired from RAxML and used in conjunction with FigTree to construct the phylogenetic tree.
 
-If I find that the alignments and creation of the trees take shorter than expected, I will consider incorporating more samples into my tree and using a more 
-complicated method, such as a maximum likeliness method or a Bayesian method. I think that comparing the outcomes of a maximum likeliness method to the simplistic NJM
-would be very interesting, but as I have absolutely no experience with any of these methods or software I do not want to get in over my head. 
+## Figures
+The branches and taxa names highlighted in red represent the sequences used by Kandeel *et. al.* 2022. A comparison of the two trees indicates that the Botswana Omicron sequence represented as an outgroup may not be accurate. 
+![My Figure](https://i.imgur.com/BUwJkRn.jpg)
