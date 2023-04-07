@@ -8,9 +8,9 @@ Medical Virology 2022; 94:1627-1632.
 
 ## Introduction
 
-I will be reproducing the phylogenetic trees in Kandeel *et. al.* 2022. To achieve this, I will SARS-CoV-2 genomes obtained from the
-GISAID EPI-COV database. GISAID is a database of genome sequences compiled by labs all over the world to help research and 
-combat emerging epidemics.  Kandeel et. al. set out to establish a lineage and relationship between the then-emerging Omicron strain and other known variants at the time. To achieve this, they used the UPGMA and Neighbor Joining methods to put forward a preliminary model that related Omicron to other strains sourced from a variety of geographic locations. The authors obtained all of their data through GISAID.
+I will be reproducing the phylogenetic trees in Kandeel *et. al.* 2022. To achieve this, I will SARS-CoV-2 genomes obtained from the GISAID EPI-COV database. GISAID is a database of genome sequences compiled by labs all over the world to help research and combat emerging epidemics, and can be found at https://gisaid.org/. 
+
+Kandeel et. al. set out to establish a lineage and relationship between the then-emerging Omicron strain and other known variants at the time. To achieve this, they used the UPGMA and Neighbor Joining methods to put forward a preliminary model that related Omicron to other strains sourced from a variety of geographic locations. The authors obtained all of their data through GISAID.
 
 My goal was to re-assess their data utilizing Maximum Likelihood methods instead, and compare my results to theirs. To achieve this, I acquired a more geographically diverse array of sequences and increased the sample size from 8 to 401. The 8 samples used in Kandeel *et al* 2022 were included in my dataset.
 
